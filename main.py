@@ -11,7 +11,7 @@ load_dotenv()
 
 # MongoDB setup
 MONGO_URI = os.getenv("MONGO_URI")
-client_db = MongoClient(MONGO_URI)
+client_db = MongoClient(MONGO_URI, tls=True, tlsAllowInvalidCertificates=False)
 db = client_db.studybot_db
 chat_collection = db.chats
 
