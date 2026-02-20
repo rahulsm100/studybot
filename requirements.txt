@@ -1,5 +1,5 @@
+pymongo>=4.5
 fastapi
 uvicorn
-pymongo[srv]
 python-dotenv
 groq
